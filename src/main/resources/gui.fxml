@@ -3,22 +3,48 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<FlowPane orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
-    <Label>Hej JavaFX!</Label>
-    <Label fx:id="label2">Det er en fin dag!</Label>
-   <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="EKG" />
-    <Button onMouseClicked="#buttonPressed" prefHeight="26.0" prefWidth="82.0" text="Puls">Tryk på mig!</Button>
+<FlowPane orientation="VERTICAL" prefHeight="393.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
+   <TitledPane animated="false" prefHeight="391.0" prefWidth="600.0" text="Forside">
+     <content>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="616.0">
+            <children>
+               <Button layoutX="246.0" layoutY="89.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="EKG" />
+               <AnchorPane layoutX="347.0" layoutY="-44.0" prefHeight="123.0" prefWidth="201.0">
+                  <children>
+                     <Polyline fx:id="poly" layoutX="154.0" layoutY="184.0" points="-154.0, -11.0, -116.0, -11.0, -107.0, -24.0, -90.0, -10.0, -75.0, -108.0, -75.0, 51.0, -62.0, -24.0, 5.0, -45.0, 76.0, -10.0" stroke="blue" />
+                  </children>
+               </AnchorPane>
+                <Label fx:id="label2" layoutX="20.0" layoutY="87.0">Det er en fin dag!</Label>
+                <Label layoutX="32.0" layoutY="118.0">Hej JavaFX!</Label>
+               <Accordion layoutY="2.0">
+                 <panes>
+                   <TitledPane animated="false" text="Tilgå Data">
+                     <content>
+                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                   </TitledPane>
+                   <TitledPane animated="false" text="Marker hændelser">
+                     <content>
+                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                   </TitledPane>
+                   <TitledPane animated="false" text="set alarmgrænser">
+                     <content>
+                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                   </TitledPane>
+                 </panes>
+               </Accordion>
+                <Button layoutX="245.0" layoutY="120.0" onMouseClicked="#buttonPressed" prefHeight="26.0" prefWidth="82.0" text="Puls">Tryk på mig!</Button>
+               <HBox layoutX="324.2" layoutY="238.2" prefHeight="109.0" prefWidth="289.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="223.0" />
+            </children>
+         </AnchorPane>
+     </content>
+      <font>
+         <Font name="System Bold" size="19.0" />
+      </font>
+   </TitledPane>
    <Accordion />
-   <Pane prefHeight="255.0" prefWidth="295.0" />
-   <AnchorPane prefHeight="270.0" prefWidth="309.0">
-      <children>
-         <Polyline fx:id="poly" layoutX="154.0" layoutY="184.0" points="-154.0, -11.0, -116.0, -11.0, -107.0, -24.0, -90.0, -10.0, -75.0, -108.0, -75.0, 51.0, -62.0, -24.0, 5.0, -45.0, 76.0, -10.0" stroke="blue" />
-      </children>
-   </AnchorPane>
-   <ButtonBar prefHeight="40.0" prefWidth="200.0">
-     <buttons>
-       <Button mnemonicParsing="false" text="Button" />
-     </buttons>
-   </ButtonBar>
 </FlowPane>
