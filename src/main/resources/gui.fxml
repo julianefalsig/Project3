@@ -1,49 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<FlowPane orientation="VERTICAL" prefHeight="393.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
-   <TitledPane animated="false" collapsible="false" prefHeight="332.0" prefWidth="587.0" text="Forside">
-     <content>
-       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="616.0">
-            <children>
-               <Button layoutX="246.0" layoutY="89.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="EKG" />
-               <AnchorPane layoutX="347.0" layoutY="-44.0" prefHeight="123.0" prefWidth="201.0">
-                  <children>
-                     <Polyline fx:id="poly" layoutX="154.0" layoutY="184.0" points="-154.0, -11.0, -116.0, -11.0, -107.0, -24.0, -90.0, -10.0, -75.0, -108.0, -75.0, 51.0, -62.0, -24.0, 5.0, -45.0, 76.0, -10.0" stroke="blue" />
-                  </children>
-               </AnchorPane>
-                <Label fx:id="label2" layoutX="16.0" layoutY="109.0">Det er en fin dag!</Label>
-                <Label layoutX="32.0" layoutY="126.0">Hej JavaFX!</Label>
-               <Accordion layoutY="2.0">
-                 <panes>
-                   <TitledPane animated="false" text="Tilgå Data">
-                     <content>
-                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                     </content>
-                   </TitledPane>
-                   <TitledPane animated="false" text="Marker hændelser">
-                     <content>
-                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                     </content>
-                   </TitledPane>
-                   <TitledPane animated="false" text="set alarmgrænser">
-                     <content>
-                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                     </content>
-                   </TitledPane>
-                 </panes>
-               </Accordion>
-                <Button layoutX="245.0" layoutY="120.0" onMouseClicked="#buttonPressed" prefHeight="26.0" prefWidth="82.0" text="Puls">Tryk på mig!</Button>
-            </children>
-         </AnchorPane>
-     </content>
-      <font>
-         <Font name="System Bold" size="19.0" />
-      </font>
-   </TitledPane>
-   <Accordion />
+<FlowPane orientation="VERTICAL" prefHeight="339.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
+    <TitledPane animated="false" collapsible="false" prefHeight="332.0" prefWidth="587.0" text="Forside">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="586.0">
+                <children>
+                    <AnchorPane layoutX="281.0" layoutY="-44.0" prefHeight="237.0" prefWidth="298.0">
+                        <children>
+                            <Polyline fx:id="poly" layoutX="154.0" layoutY="184.0" points="-154.0, -11.0, -116.0, -11.0, -107.0, -24.0, -90.0, -10.0, -75.0, -108.0, -75.0, 51.0, -62.0, -24.0, 5.0, -45.0, 76.0, -10.0" stroke="blue" />
+                        </children>
+                    </AnchorPane>
+                    <Accordion layoutY="2.0">
+                        <panes>
+                            <TitledPane animated="false" text="Tilgå Data">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Marker hændelser">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="set alarmgrænser">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                            </TitledPane>
+                        </panes>
+                    </Accordion>
+                    <GridPane layoutX="228.0" layoutY="207.0" prefHeight="91.0" prefWidth="358.0" AnchorPane.bottomAnchor="-7.800000000000026" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="-15.999999999999943">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="TEMP" GridPane.columnIndex="1" />
+                            <Button onMouseClicked="#buttonPressed" prefHeight="30.0" prefWidth="112.0" text="Puls" GridPane.columnIndex="2">Tryk på mig!</Button>
+                            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" text="SPO2" GridPane.columnSpan="2" />
+                            <Label text="98" GridPane.rowIndex="1">
+                                <GridPane.margin>
+                                    <Insets left="50.0" />
+                                </GridPane.margin>
+                            </Label>
+                            <Label text="37" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <GridPane.margin>
+                                    <Insets left="50.0" />
+                                </GridPane.margin>
+                            </Label>
+                            <Label text="60" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                <GridPane.margin>
+                                    <Insets left="50.0" />
+                                </GridPane.margin>
+                            </Label>
+                        </children>
+                    </GridPane>
+                    <RadioButton layoutX="206.0" layoutY="14.0" mnemonicParsing="false" text="start måling" />
+                </children>
+            </AnchorPane>
+        </content>
+        <font>
+            <Font name="System Bold" size="19.0" />
+        </font>
+    </TitledPane>
 </FlowPane>
