@@ -18,7 +18,7 @@
                     </AnchorPane>
                     <Accordion layoutY="2.0">
                         <panes>
-                            <TitledPane animated="false" collapsible="false" expanded="false" text="Tilgå data">
+                            <TitledPane animated="false" expanded="false" text="Tilgå data">
                                 <content>
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                                 </content>
@@ -26,7 +26,7 @@
                            <Font size="14.0" />
                         </font>
                             </TitledPane>
-                            <TitledPane animated="false" collapsible="false" expanded="false" text="Marker hændelser">
+                            <TitledPane animated="false" expanded="false" text="Marker hændelser">
                                 <content>
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                                 </content>
@@ -34,7 +34,7 @@
                            <Font size="14.0" />
                         </font>
                             </TitledPane>
-                            <TitledPane animated="false" collapsible="false" expanded="false" text="Sæt alarmgrænser">
+                            <TitledPane animated="false" expanded="false" text="Sæt alarmgrænser">
                                 <content>
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                                 </content>
