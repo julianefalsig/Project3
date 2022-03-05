@@ -14,6 +14,11 @@
                     <AnchorPane layoutX="281.0" layoutY="-44.0" prefHeight="237.0" prefWidth="298.0">
                         <children>
                             <Polyline fx:id="poly" layoutX="154.0" layoutY="184.0" points="-154.0, -11.0, -116.0, -11.0, -107.0, -24.0, -90.0, -10.0, -75.0, -108.0, -75.0, 51.0, -62.0, -24.0, 5.0, -45.0, 76.0, -10.0" stroke="#15a82b" />
+                          <RadioButton layoutX="191.0" layoutY="55.0" mnemonicParsing="false" text="Start måling" textFill="#31c921">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </RadioButton>
                         </children>
                     </AnchorPane>
                     <Accordion layoutY="2.0">
@@ -41,7 +46,19 @@
                         <font>
                            <Font size="14.0" />
                         </font>
+
                             </TitledPane>
+
+                            <TitledPane animated="false" expanded="false" text="registrer patient">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+
+                            </TitledPane>
+
                         </panes>
                     </Accordion>
                     <GridPane layoutX="228.0" layoutY="207.0" prefHeight="91.0" prefWidth="358.0" AnchorPane.bottomAnchor="-7.800000000000026" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="-15.999999999999943">
@@ -93,10 +110,11 @@
                             </Label>
                         </children>
                     </GridPane>
-                    <RadioButton layoutX="206.0" layoutY="14.0" mnemonicParsing="false" text="Start måling" textFill="#31c921">
+               <Label layoutX="228.0" layoutY="14.0" text="EKG:">
                   <font>
-                     <Font size="14.0" />
-                  </font></RadioButton>
+                     <Font name="System Bold Italic" size="20.0" />
+                  </font>
+               </Label>
                 </children>
             </AnchorPane>
         </content>
