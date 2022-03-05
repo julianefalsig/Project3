@@ -14,9 +14,10 @@
                     <AnchorPane layoutX="281.0" layoutY="-44.0" prefHeight="237.0" prefWidth="298.0">
                         <children>
                             <Polyline fx:id="poly" layoutX="154.0" layoutY="184.0" points="-154.0, -11.0, -116.0, -11.0, -107.0, -24.0, -90.0, -10.0, -75.0, -108.0, -75.0, 51.0, -62.0, -24.0, 5.0, -45.0, 76.0, -10.0" stroke="blue" />
+                          <RadioButton layoutX="169.0" layoutY="50.0" mnemonicParsing="false" text="start måling" />
                         </children>
                     </AnchorPane>
-                    <Accordion layoutY="2.0">
+                    <Accordion layoutY="2.0" prefHeight="93.0" prefWidth="202.0">
                         <panes>
                             <TitledPane animated="false" text="Tilgå Data">
                                 <content>
@@ -28,7 +29,17 @@
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                                 </content>
                             </TitledPane>
-                            <TitledPane animated="false" text="set alarmgrænser">
+                            <TitledPane animated="false" graphicTextGap="3.0" text="Sæt alarmgrænser">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="alle patienter">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Opret patient">
                                 <content>
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                                 </content>
@@ -40,6 +51,9 @@
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         </columnConstraints>
                         <rowConstraints>
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -47,8 +61,8 @@
                         </rowConstraints>
                         <children>
                             <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="TEMP" GridPane.columnIndex="1" />
-                            <Button onMouseClicked="#buttonPressed" prefHeight="30.0" prefWidth="112.0" text="Puls" GridPane.columnIndex="2">Tryk på mig!</Button>
-                            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" text="SPO2" GridPane.columnSpan="2" />
+                            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="112.0" text="PULS" GridPane.columnIndex="3" GridPane.columnSpan="3" />
+                            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" text="SPO2" GridPane.columnIndex="2" GridPane.columnSpan="2" />
                             <Label text="98" GridPane.rowIndex="1">
                                 <GridPane.margin>
                                     <Insets left="50.0" />
@@ -66,7 +80,7 @@
                             </Label>
                         </children>
                     </GridPane>
-                    <RadioButton layoutX="206.0" layoutY="14.0" mnemonicParsing="false" text="start måling" />
+               <Label layoutX="243.0" layoutY="6.0" prefHeight="24.0" prefWidth="42.0" text="EKG:" underline="true" />
                 </children>
             </AnchorPane>
         </content>
