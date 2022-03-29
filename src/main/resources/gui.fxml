@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<FlowPane orientation="VERTICAL" prefHeight="339.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
+<FlowPane orientation="VERTICAL" prefHeight="339.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuiController">
     <TitledPane collapsible="false" prefHeight="332.0" prefWidth="587.0" text="Forside">
         <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="586.0">
