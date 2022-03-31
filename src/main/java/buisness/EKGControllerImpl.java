@@ -1,7 +1,5 @@
 package buisness;
 
-import data.EKGData;
-
 public class EKGControllerImpl implements EKGController, EKGObserver  {
 
 

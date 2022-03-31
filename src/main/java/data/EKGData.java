@@ -1,4 +1,8 @@
 package data;
 
-public class EKGData {
+public interface EKGData {
+    void setVoltage(double voltage);
+    double getVoltage();
+    void setTime(double time);
+    double getTime();
 }
